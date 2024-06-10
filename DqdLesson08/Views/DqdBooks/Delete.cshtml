@@ -1,0 +1,73 @@
+﻿﻿@model DqdLesson8.Models.DqdBook
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DqdBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdPublisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdPublisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdCategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdCategoryId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

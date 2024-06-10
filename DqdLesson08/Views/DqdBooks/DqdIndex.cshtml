@@ -1,0 +1,64 @@
+﻿﻿@model IEnumerable<DqdLesson8.Models.DqdBook>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdAuthor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdPublisher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdPicture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DqdCategoryId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdAuthor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdPublisher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdPicture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DqdCategoryId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.DqdBookId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.DqdBookId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.DqdBookId })
+            </td>
+        </tr>
+    }
+
+</table>

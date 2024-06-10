@@ -1,0 +1,66 @@
+﻿﻿@model DqdLesson8.Models.DqdBook
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DqdBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdPublisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdPublisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DqdCategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DqdCategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DqdBookId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
