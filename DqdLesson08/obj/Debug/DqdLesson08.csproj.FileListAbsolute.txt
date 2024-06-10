@@ -1,2 +1,0 @@
-E:\ASP.NET\DqdLesson08\DqdLesson08\obj\Debug\DqdLesson08.csproj.AssemblyReference.cache
-E:\ASP.NET\DqdLesson08\DqdLesson08\obj\Debug\DqdLesson08.csproj.CoreCompileInputs.cache
